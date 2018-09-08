@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    let Celsius = function (C) {
+        this.C = C;
+        this.getF = function () {
+            return C * 1.8 + 32;
+        };
+        this.getK = function () {
+            return C + 273.15;
+        }
+    };
+    let myC = new Celsius(25);
+    this.getF = myC.getF();
+    this.getK = myC.getK();
+    alert("Độ F: " + getF + " - " + "Độ K: " + getK );
+</script>
+</body>
+</html>
